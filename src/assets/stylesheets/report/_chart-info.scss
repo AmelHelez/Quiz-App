@@ -1,0 +1,54 @@
+.chart-info {
+    flex-basis: 50%;
+    padding-top: 40px;
+    margin-left: -15px;
+
+    @media screen and (min-width: 1000px) {
+      margin-left: 10px;
+      padding: 80px 0 0;
+    }
+
+    ul {
+      list-style: square;
+      text-align: left;
+
+      li {
+        font-weight: 600;
+        font-size: 13px;
+        font-family: var(--nunito);
+        opacity: 0.8;
+        letter-spacing: -0.02em;
+        line-height: 18px;
+        text-transform: capitalize;
+
+        @media screen and (min-width: 1000px) {
+          font-size: 23px;
+          line-height: 40px;
+        }
+
+        &::marker {
+          font-size: 20px;
+
+          @media screen and (min-width: 1000px) {
+            font-size: 25px;
+          }
+        }
+
+        span {
+          color: #143656;
+        }
+
+        &:first-of-type {
+          color: #206cd6;
+        }
+
+        &:nth-of-type(2) {
+          color: #848e9c;
+        }
+
+        &:last-of-type {
+          color: #fcd535;
+        }
+      }
+    }
+  }

@@ -1,0 +1,40 @@
+{
+  "imageData": [
+    { "src": "logo_loremipsum.svg", "alt": "Lorem Ipsum Logo" },
+    { "src": "logo_real-estate.svg", "alt": "Real Estate Logo" },
+    { "src": "logo_cars-4-sale.svg", "alt": "Cars For Sale Logo" },
+    { "src": "logo_fashion.svg", "alt": "Fashion Fit Logo" }
+  ],
+  "bodyColors": [
+    "#FFFFFF",
+    "#F9EDED",
+    "#F8FBFF",
+    "#EFF5FB",
+    "#C6D9F3"
+  ],
+  "footerData": {
+    "footerBackground": [
+      "#000000",
+      "#FFFFFF",
+      "#FFFFFF",
+      "#FFFFFF"
+    ],
+    "buttonBackground": [
+      "white",
+      "#BE1E2D",
+      "rgba(16, 127, 196)"
+    ],
+    "buttonColor": [
+      "#000000",
+      "#FFFFFF",
+      "#FFFFFF",
+      "#000000"
+    ],
+    "buttonData": [
+      "Start Quiz",
+      "Select Property",
+      "Select Vehicle",
+      "Select Outfit"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+.card-details {
+    flex-basis: 100%;
+
+    .list {
+      padding: 0 50px;
+
+      li {
+        display: flex;
+        font-size: 11px;
+        color: #143656;
+        opacity: 0.8;
+        line-height: 15px;
+        font-family: var(--nunito);
+        font-weight: normal;
+        margin-bottom: 6px;
+
+        @media screen and (min-width: 1000px) {
+          font-size: 15px;
+        }
+
+        &::after {
+          background-image: radial-gradient(circle, currentcolor 1px, transparent 1.5px);
+          background-position: bottom;
+          background-size: 1ex 4.5px;
+          background-repeat: space no-repeat;
+          content: '';
+          flex-grow: 1;
+          height: 1em;
+          order: 2;
+          color: rgba(20, 54, 86, 0.5);
+        }
+
+        .card-name {
+          order: 1;
+          margin-right: 15px;
+        }
+
+        .card-value {
+          order: 3;
+          margin-left: 15px;
+        }
+      }
+    }
+  }

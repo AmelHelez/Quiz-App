@@ -1,0 +1,88 @@
+.fashion-cards {
+    width: 90%;
+    margin: 40px auto;
+  
+    @media screen and (min-width: 1000px) {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .cards {
+      margin-bottom: 40px;
+      background-color: white;
+      border-radius: 25px;
+      padding: 35px 0;
+  
+      @media screen and (min-width: 1000px) {
+        margin-right: 30px;
+        padding: 15px;
+        cursor: pointer;
+      }
+  
+      &.active {
+        &::after {
+          z-index: 2;
+        }
+      }
+  
+      .checkmark {
+        top: 40%;
+  
+        @media screen and (min-width: 1000px) {
+          left: 42%;
+        }
+  
+        img {
+          filter: invert(47%) sepia(2%) saturate(1209%)
+            hue-rotate(314deg) brightness(88%) contrast(89%);
+        }
+      }
+  
+      hr {
+        border: 1px solid rgba(20, 54, 86, 0.5);
+        width: 95%;
+  
+        @media screen and (min-width: 1000px) {
+          margin-top: 10px;
+          width: 100%;
+        }
+      }
+  
+      .total-cost {
+        display: flex;
+        font-size: 20px;
+        letter-spacing: -0.3px;
+        padding: 0 25px;
+  
+        @media screen and (min-width: 1000px) {
+          font-size: 24px;
+        }
+  
+        p {
+          flex: 1;
+          text-align: start;
+          font-family: var(--nunito);
+        }
+  
+        h3 {
+          font-size: 20px;
+          font-weight: 500;
+  
+          @media screen and (min-width: 1000px) {
+            font-size: 24px;
+          }
+        }
+      }
+  
+      .card-data {
+        @media screen and (min-width: 1000px) {
+          flex-basis: 45%;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }

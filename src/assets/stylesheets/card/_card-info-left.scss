@@ -1,0 +1,68 @@
+.left {
+    flex-basis: 45%;
+    text-align: left;
+    padding: 0 0 0 20px;
+
+    .card-name {
+      font-size: 20px;
+      letter-spacing: -0.3px;
+      height: 0;
+      margin-top: 10px;
+      font-weight: 400;
+    }
+
+    .fashion-name {
+      font-size: 20px;
+      letter-spacing: -0.3px;
+      height: 0;
+      margin-top: 10px;
+      font-weight: 400;
+      width: 180%;
+      margin-left: -13px;
+    }
+
+    .stars {
+      display: inline-block;
+      font-size: 9px;
+
+      .reviews {
+        color: rgba(0, 0, 0, 0.2);
+        line-height: 11px;
+        letter-spacing: -0.3px;
+        margin-left: 9px;
+        font-family: var(--rubik);
+        font-weight: 300;
+      }
+    }
+
+    .agent {
+      display: flex;
+      flex-direction: row;
+      margin-top: 4px;
+
+      img {
+        height: 100%;
+        margin-top: 2px;
+      }
+    }
+
+    .agent,
+    .description {
+      p {
+        margin-left: 8px;
+        font-size: 11px;
+        line-height: 13px;
+        margin-top: 5px;
+        font-family: var(--rubik);
+        font-weight: 300;
+
+        &.car-description {
+          margin-left: 0;
+        }
+
+        &.clothing-description {
+          margin-left: -12px;
+        }
+      }
+    }
+  }

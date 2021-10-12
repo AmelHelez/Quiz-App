@@ -1,0 +1,23 @@
+@import './card-info-left';
+@import './card-info-right';
+@import "./car-info";
+
+.card-info {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+  padding-top: 6px;
+  position: absolute;
+  bottom: 0;
+  flex-wrap: wrap;
+  z-index: 0;
+
+  @media screen and (min-width: 1000px) {
+  }
+
+  p,
+  h4 {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,49 @@
+@import './chart-info';
+@import './category-list';
+
+.chart {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 0 12px 0;
+    width: 90%;
+    margin: 18px auto;
+    flex-wrap: nowrap;
+
+    @media screen and (min-width: 1000px) {
+      flex-basis: 40%;
+      padding: 0;
+      margin: 0 auto;
+      background-color: inherit;
+    }
+
+    .chart-props {
+      flex-basis: 50%;
+
+      p {
+        display: inline-block;
+        color: #143656;
+        font-weight: 500;
+        font-size: 12px;
+        margin-bottom: 0;
+        font-family: var(--rubik);
+
+        @media screen and (min-width: 1000px) {
+          font-size: 20px;
+        }
+      }
+
+      // important was used because this canvas
+      // has built-in width and height values
+      canvas {
+        margin: auto;
+        width: 140px !important;
+        height: 140px !important;
+
+        @media screen and (min-width: 1000px) {
+          width: 200px !important;
+          height: 200px !important;
+        }
+      }
+    }
+  }

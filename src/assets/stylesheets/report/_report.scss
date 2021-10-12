@@ -1,0 +1,47 @@
+@import './chart';
+
+.report {
+    height: 100%;
+    min-height: 100vh;
+    padding-bottom: 50px;
+  
+    @media screen and (min-width: 1000px) {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 100px;
+    }
+  
+    .container {
+      @media screen and (min-width: 1000px) {
+        flex-basis: 100%;
+        margin-bottom: 0;
+      }
+  
+      h1 {
+        margin-bottom: 0;
+  
+        @media screen and (min-width: 1000px) {
+          font-size: 40px;
+        }
+      }
+  
+      .report-result {
+        padding: 5px 20px;
+        border-radius: 20px;
+        background-color: var(--spender-type-color);
+        display: inline-block;
+        color: #143656;
+        font-weight: bold;
+        font-family: var(--nunito);
+  
+        @media screen and (min-width: 1000px) {
+          font-size: 25px;
+          padding: 11px 35px;
+        }
+      }
+    }
+  
+    :root {
+      --spender-type-color: 'white';
+    }
+  }

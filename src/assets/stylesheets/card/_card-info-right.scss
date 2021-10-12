@@ -1,0 +1,25 @@
+.right {
+    flex-basis: 39%;
+    margin: auto 0 auto auto;
+    padding: 0 20px 0 0;
+
+    h3 {
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -0.3px;
+      text-align: end;
+
+      &.car-total-value {
+        margin-top: 0;
+      }
+
+      &.clothing-price {
+        margin-top: 0;
+        margin-right: -12px;
+      }
+
+      span {
+        font-size: 12px;
+      }
+    }
+  }
